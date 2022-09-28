@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="#" class="navbar_logo">Navbar</a>
+        <button class="navbar_toggler">
+            <span class="navbar_toggler--icon"></span>
+        </button>
+        <div class="navbar_menu">
+            <ul class="navbar_items">
+                <li class="item">Home</li>
+                <li class="item">Link</li>
+                <li class="item navbar_dropdown">
+                    <a href="" class="dropdown_toggle">Dropdown</a>
+                    <ul class="dropdown_menu">
+                        <li><a href="dropdown_item">Link1</a></li>
+                        <li><a href="dropdown_item">Link2</a></li>
+                        <li><a href="dropdown_item">Link3</a></li>
+                    </ul>
+                </li>
+                <li class="item">
+                    <a href="" disabled>Disabled</a>
+                </li>
+            </ul>
+            <form action="search">
+                <input type="search">
+                <button class="btn" type="submit"></button>
+            </form>
+        </div>
+    </nav>
+</body>
+
+</html>
