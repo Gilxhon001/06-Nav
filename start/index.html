@@ -11,31 +11,40 @@
 
 <body>
     <nav class="navbar">
-        <a href="#" class="navbar_logo">Navbar</a>
-        <button class="navbar_toggler">
-            <span class="navbar_toggler--icon"></span>
-        </button>
-        <div class="navbar_menu">
-            <ul class="navbar_items">
-                <li class="item">Home</li>
-                <li class="item">Link</li>
-                <li class="item navbar_dropdown">
-                    <a href="" class="dropdown_toggle">Dropdown</a>
-                    <ul class="dropdown_menu">
-                        <li><a href="dropdown_item">Link1</a></li>
-                        <li><a href="dropdown_item">Link2</a></li>
-                        <li><a href="dropdown_item">Link3</a></li>
-                    </ul>
-                </li>
-                <li class="item">
-                    <a href="" disabled>Disabled</a>
-                </li>
-            </ul>
-            <form action="search">
-                <input type="search">
-                <button class="btn" type="submit"></button>
-            </form>
-        </div>
+        <!-- LOGO -->
+        <div class="logo">Navbar</div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+            <!-- USING CHECKBOX HACK -->
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+                <form class="menu--links">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Link</a></li>
+                    <li class="dropdown--elements">
+                        <a href="">Dropdown &#8628</a>
+                        <!-- DROPDOWN MENU -->
+                        <ul class="dropdown">
+                            <li><a href="">Dropdown 1 </a></li>
+                            <li><a href="">Dropdown 2</a></li>
+                            <li><a href="">Dropdown 2</a></li>
+                            <li><a href="">Dropdown 3</a></li>
+                            <li><a href="">Dropdown 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="disabled"><a class="disabled">Disabled</a></li>
+                </form>
+                <form class="search">
+                    <li>
+                        <input type="text" placeholder="Search" class="search--input">
+                        <input type="button" value="Search" class="search--btn">
+                    </li>
+                </form>
+            </div>
+        </ul>
+
     </nav>
 </body>
 
